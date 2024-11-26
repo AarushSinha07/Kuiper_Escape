@@ -37,35 +37,14 @@ The agent has the following discrete set of actions :
 Reward is given to the agent according to a function which is inversely related to the distance from the center of the environment screen to the agent . Further, a negative reward is awarded to the agent if collision is detected .
 
 ###### Algorithms
-In the Frozen Lake environment, understanding deterministic and stochastic dynamics is key for choosing the right strategy:
-
-- **Deterministic Environment**: Actions have predictable outcomes. For example, if an agent moves "left," it always ends up to the left. No randomness affects the result.
-
-- **Stochastic Environment**: The Frozen Lake environment is stochastic. Actions have uncertain outcomes; for instance, moving "left" might result in slipping to another direction e.g "right" .This randomness requires the agent to plan for different possible outcomes.
-
-Dynamic programming algorithms help solve this environment by handling its unpredictability:
-
-- **Policy Evaluation**: Estimates how good it is to follow a given policy by considering the possible outcomes.
-
-- **Policy Improvement**: Refines the policy by choosing actions that maximize expected value, accounting for randomness.
-
-- **Policy Iteration**: Repeats evaluation and improvement until the policy is optimal.
-
-- **Value Iteration**: Directly updates state values by choosing the best actions, speeding up convergence to an optimal policy.
-
-These methods find effective strategies in the uncertain conditions of the Frozen Lake.
-
+Reinforcement learning offers a variety of algorithms that are useful for solving problems in model-free environments, where the agent does not have prior knowledge of the environment's dynamics. For this project, Q-learning was chosen as the primary algorithm because of its faster optimization rate (or convergence) compared to many other methods. Q-learning is an off-policy algorithm, meaning it learns the optimal policy by considering actions that may not necessarily follow the current policy. This property makes it highly effective for balancing exploration and exploitation. Since Q-learning focuses heavily on exploring the environment to gather more information, it aligns perfectly with the needs of this project, where the agent must adapt and improve its navigation strategies in a dynamic and unknown setting.
 
 The link for the code has been provided below .
 
 
+###### Convergence problem with continuous observation space: 
+When we consider continuous observation space (For eg:  2.21 and 2.2134 are different distances in observation space) it results in memory overflow and consequently we get an insufficient Q table for convergence. Thus to reduce our computational load , we discretized this continuous observation space which provided us with only few values for our policy convergence and hence made it more efficient and faster.
 
-
-
-
-Here's a GIF demonstrating the Frozen Lake algorithm:
-
-![Frozen Lake](Gifs/Frozen_Lake_gif.gif)
 
 
 
