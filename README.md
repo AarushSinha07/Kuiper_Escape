@@ -48,7 +48,7 @@ Reward is given to the agent according to a function which is inversely related 
 Initially Agent takes random actions and mostly traverse along the edges navigating and exploring the environment
 
 
-![1](Gifs/1.gif)
+![1](Gifs/1(i).gif)
 
 After a certain number of episodes, the agent begins to improve its navigation skills within the environment, demonstrating a more strategic approach by effectively avoiding rocks.
 
