@@ -14,6 +14,8 @@
 ## Kuiper Belt Environment
 To challenge the agent's learning capabilities, the custom Kuiper Belt environment was designed as a complex and dynamic scenario. Unlike simpler environments, this setup provided limited knowledge of its dynamics, requiring the agent to learn optimal strategies through exploration and adaptation. This made it an ideal choice for implementing and analyzing reinforcement learning algorithms in a more realistic and unpredictable setting.
 
+![Kuiper Belt](Images/Kuiper_Belt.png)
+
 
 ### State Space
 The state is a "virtual" lidar system. It sends off virtual beams of light in all directions to gather an array of points describing the distance and characteristics of nearby objects. The size of the lidar array and resulting observation/state space is configurable when the environment is initialized.
