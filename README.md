@@ -48,20 +48,18 @@ Reward is given to the agent according to a function which is inversely related 
 Initially Agent takes random actions and mostly traverse along the edges navigating and exploring the environment
 
 
-
+![1](Gifs/1.gif)
 
 After a certain number of episodes, the agent begins to improve its navigation skills within the environment, demonstrating a more strategic approach by effectively avoiding rocks.
 
+![2](Gifs/2.gif)
 
-
+![3](Gifs/3.gif)
 
 
 After 12k episodes, the agent has now learned enough, navigating through the environment, skillfully avoiding the rocks with precision. Its movements have become more efficient, showing a clear understanding of the surroundings and an ability to adapt to challenges.
 
-
-
-
-
+![4](Gifs/4.gif)
 
 
 
