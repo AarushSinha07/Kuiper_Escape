@@ -66,6 +66,8 @@ Reinforcement learning offers a variety of algorithms that are useful for solvin
 
 The link for the code has been provided below .
 
+[Kuiper Escape](Codes/tes.py)
+
 
 ### Convergence problem with continuous observation space: 
 When we consider continuous observation space (For eg:  2.21 and 2.2134 are different distances in observation space) it results in memory overflow and consequently we get an insufficient Q table for convergence. Thus to reduce our computational load , we discretized this continuous observation space which provided us with only few values for our policy convergence and hence made it more efficient and faster.
@@ -75,7 +77,7 @@ When we consider continuous observation space (For eg:  2.21 and 2.2134 are diff
 
 ### Results
 
-![Rewards Vs Episodes](Images/reward_vs_episodes.png)
+![Rewards Vs Episodes](Images/rewards_vs_episodes.png)
 
 
 
