@@ -75,7 +75,7 @@ When we consider continuous observation space (For eg:  2.21 and 2.2134 are diff
 
 ### Results
 
-![Rewards Vs Episodes](Images/Kuiper_Belt.png)
+![Rewards Vs Episodes](Images/reward_vs_episodes.png)
 
 
 
