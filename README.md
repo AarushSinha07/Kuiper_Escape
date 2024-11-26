@@ -66,7 +66,7 @@ Reinforcement learning offers a variety of algorithms that are useful for solvin
 
 The link for the code has been provided below .
 
-[Kuiper Escape](Codes/tes.py)
+[Kuiper Escape](Code/tes.py)
 
 
 ### Convergence problem with continuous observation space: 
