@@ -61,6 +61,12 @@ After 12k episodes, the agent has now learned enough, navigating through the env
 
 
 
+
+
+
+
+
+
 ### Algorithms
 Reinforcement learning offers a variety of algorithms that are useful for solving problems in model-free environments, where the agent does not have prior knowledge of the environment's dynamics. For this project, Q-learning was chosen as the primary algorithm because of its faster optimization rate (or convergence) compared to many other methods. Q-learning is an off-policy algorithm, meaning it learns the optimal policy by considering actions that may not necessarily follow the current policy. This property makes it highly effective for balancing exploration and exploitation. Since Q-learning focuses heavily on exploring the environment to gather more information, it aligns perfectly with the needs of this project, where the agent must adapt and improve its navigation strategies in a dynamic and unknown setting.
 
@@ -69,8 +75,14 @@ The link for the code has been provided below .
 [Kuiper Escape](Code/tes.py)
 
 
+
+
+
+
 ### Convergence problem with continuous observation space: 
 When we consider continuous observation space (For eg:  2.21 and 2.2134 are different distances in observation space) it results in memory overflow and consequently we get an insufficient Q table for convergence. Thus to reduce our computational load , we discretized this continuous observation space which provided us with only few values for our policy convergence and hence made it more efficient and faster.
+
+
 
 
 
